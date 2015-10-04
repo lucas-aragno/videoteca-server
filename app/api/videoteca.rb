@@ -9,6 +9,11 @@ module Videoteca
         Movie.limit(20)
       end
 
+      desc "Returns the last movie"
+      get :featured_movie do 
+        Movie.last
+      end
+
       desc "Returns a movie"
       params do
         requires :id, type: Integer, desc: "movie id"
