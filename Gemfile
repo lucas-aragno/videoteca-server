@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.2.3'
 
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'devise'
 gem 'grape'
+gem 'rack-cors', :require => 'rack/cors'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
